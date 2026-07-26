@@ -3,6 +3,13 @@
 Aplikasi *Conversational Commerce* modern berbasis **Retrieval-Augmented Generation (RAG)** yang dirancang untuk memberikan pengalaman belanja interaktif peralatan *outdoor*. Platform ini menggabungkan kecerdasan **Google Gemini 2.0**, penelusuran katalog terstruktur, manajemen keranjang belanja (*multi-item cart*), serta kalkulasi checkout finansial yang tervalidasi secara presisi.
 
 ---
+## 🔄 Diagram Alir System & Architecture Flow
+Diagram di bawah ini menjelaskan alur kerja sistem dari saat pengguna memasukkan kueri hingga proses transaksi selesai:
+
+<img width="1429" height="8192" alt="image" src="https://github.com/user-attachments/assets/18f3c6c6-4332-40ac-9a59-87bf29e46e29" />
+
+
+---
 
 ## 🌟 Fitur Utama
 
