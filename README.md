@@ -33,22 +33,70 @@ Aplikasi *Conversational Commerce* modern berbasis **Retrieval-Augmented Generat
 | **Validation Engine** | SymPy (Financial Formula Evaluation) |
 | **Data Processing** | Pandas, NumPy, Python-Dotenv |
 
+| Modul & Teknologi | Stack / Teknologi | Fungsi |
+| :--- | :--- | :--- |
+| **Frontend UI** | Streamlit | Antarmuka obrolan dan panel checkout |
+| **Backend API** | FastAPI / Uvicorn | Endpoint REST API untuk integrasi sistem eksternal |
+| **Generative AI** | Google GenAI SDK (`gemini-2.0-flash-lite`) | Inferensi rekomendasi terstruktur |
+| **NLU Engine** | TensorFlow / Keras (CNN 1D) | Klasifikasi niat pencarian kueri |
+| **Database** | Supabase (PostgreSQL + pgvector) | Penyimpanan data relational dan vektor |
+| **Validation Engine** | SymPy | Kalkulasi formula total tagihan transaksi |
+
 ---
 
 ## 📁 Struktur Direktori Proyek
 
 ```text
-AI-Shopping-Concierge-New/
-├── app.py                      # Main Entry Point & User Interface (Streamlit)
-├── config.py                   # Centralized Environment Configuration & Validation
-├── .env.example                # Template Variabel Lingkungan
-├── .gitignore                  # Git Exclusion Rules (Pencegahan Kebocoran API Key)
-├── requirements.txt            # Dependency Management
-├── README.md                   # Dokumentasi Proyek
-└── src/
-    ├── services/
-    │   ├── concierge_pipeline.py  # Orchestration Pipeline RAG
-    │   └── llm_integration.py     # Gemini LLM Client Integration
+AI-Shopping-Concierge/
+├── data/
+│   ├── embeddings/
+│   │   └── product_vectors.pkl
+│   ├── processed/
+│   │   └── cleaned_dataset.csv
+│   └── raw/
+│       └── Dataset_ecommerce_500.csv
+├── docs/
+│   ├── arsititektur_gambar/
+│   │   └── Arsitektur_CNN1D_AI_Concierge.png
+│   └── PPT Case Study ML.pdf
+├── notebooks/
+│   ├── 01_eda_and_preprocessing.ipynb
+│   ├── 02_cnn_model_training_ipynb.ipynb
+│   └── 03_vector_embeddings.ipynb
+├── scripts/
+│   └── AI_Shopping_Concierge_New.ipynb
+├── src/
+│   ├── database/
+│   │   ├── __init__.py
+│   │   ├── relational_queries.py
+│   │   ├── supabase_client.py
+│   │   └── vector_db_client.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── intent_classification_model.keras
+│   │   ├── intent_classifier.py
+│   │   └── semantic_search.py
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── concierge_pipeline.py
+│   │   └── llm_integration.py
+│   ├── tools/
+│   │   ├── __init__.py
+│   │   ├── query_parser.py
+│   │   └── scientific_calculator.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   └── text_processing.py
+│   ├── __init__.py
+│   ├── config.py
+│   └── main.py
+├── .gitignore
+├── Procfile
+├── README.md
+├── app.py
+├── logo.png
+├── main.py
+└── requirements.txt
 
 
 
@@ -56,7 +104,7 @@ AI-Shopping-Concierge-New/
 
 🚀 Panduan Instalasi & Penggunaan
 1. Prasyarat
-Pastikan komputer Anda telah terinstal Python 3.10 atau versi yang lebih baru.
+Pastikan komputer telah terinstal Python 3.10 atau versi yang lebih baru.
 
 2. Clone Repositori
 Bash
