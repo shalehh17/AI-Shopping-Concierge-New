@@ -1,0 +1,34 @@
+# === Kredensial & Lingkungan Rahasia===
+.env
+.env.*
+*.env
+secret_key.txt
+
+# === Virtual Environment & Dependensi Lokal ===
+venv/
+.venv/
+env/
+ENV/
+bin/
+include/
+lib/
+share/
+pyvenv.cfg
+
+# === Python Cache & Hasil Kompilasi ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# === Cache Streamlit & File Konfigurasi Lokal ===
+.streamlit/
+*.log
+
+# === Berkas Sistem Operasi & Aplikasi Editor ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

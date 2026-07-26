@@ -1,0 +1,14 @@
+supabase==2.4.0
+python-dotenv==1.0.1
+streamlit
+numpy
+google-genai
+sympy
+scipy
+fastapi
+uvicorn
+pydantic
+streamlit
+numpy
+sympy
+pandas
